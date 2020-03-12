@@ -1,0 +1,326 @@
+h1 {
+    padding: 70px 0 10px 0;
+    font-family: 'Raleway', sans-serif;
+    font-size: 42px;
+    color: #333;
+    margin: auto;
+    margin-top: 50px;
+}
+
+h2 {
+    margin-top: 30px;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+}
+
+h3 {
+    margin-top: 0px;
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-weight: 100;
+}
+
+
+h4 {
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    font-weight: 100;
+}
+
+
+input {
+    margin: 0 0 20px 0;
+    border-radius: 3px;
+    border: 0.5px solid #2d2d2d9c;
+    letter-spacing: 0.5px;
+}
+
+select {
+    margin: 0 0 20px 0;
+}
+
+.login {
+    display: flex;
+    flex-direction: row;
+    width: 1100px;
+    margin: auto;
+    padding: 20px auto;
+    padding-bottom: 100px;
+}
+
+.login-form {
+    animation-name: show;
+    animation-duration: .2s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: both;
+    top: 30px;
+}
+
+.signup-form {
+    animation-name: show;
+    animation-duration: .2s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: both;
+    margin-top: 30px;
+    margin-left: 80px;
+}
+
+.signup-form .user-fieldset {
+    position: relative;
+    top: -30px;
+    width: 200px;
+    padding-bottom: 60px;
+    margin-right: 80px;
+}
+
+.user-fieldset {
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+    padding: 0 70px;
+    margin: 10px 60px 0 50px;
+    border: solid #333;
+    border-radius: 4px;
+}
+
+.input-text {
+    height: 42px;
+    width: 240px;
+    margin: 0 0 20px 0;
+    padding-left: 10px;
+    font-family: 'Roboto', sans-serif;
+    text-indent: 4px;
+}
+
+.input-text:focus {
+    outline: none !important;
+}
+
+#total {
+    display: none;
+    font-family: 'Raleway', sans-serif;
+    margin-top: -10px;
+    font-size: 18px;
+    color: #69a;
+}
+
+#error,
+#errorDiv,
+#errorEmail,
+#passValidation,
+#shortPass,
+#phoneValidation,
+#errorArchivo {
+    display: none;
+    color: red;
+    font-size: 10px;
+}
+
+ 
+#signupresponse {
+    color: red;
+    font-size: 10px;
+}
+
+#especialidad {
+    animation-name: show;
+    animation-duration: .2s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: both;    
+    border: none;
+}
+
+#confirmPass,
+#telefono,
+#apellido {
+    animation-name: show;
+    animation-duration: .2s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: both;
+    display: none;
+}
+
+#memSelector {
+    margin-top: 0;
+}
+
+.signup-form .boton-submit {
+    width: 250px;
+    margin: 10px 0 0 0;
+}
+
+.login-form .boton-submit {
+    width: 250px;
+}
+
+.graduacion {
+    float: left;
+}
+
+.post-grado {
+    float: left;
+}
+
+#universidad,
+#local_postgrado {
+    width: 180px;
+}
+
+#sinborde {
+    border: none;
+}
+
+.fecha-graduacion {
+    width: 80px;
+}
+
+.graduacion span {
+    font-size: 10px;
+}
+
+#certificado2_link,
+#certificado3_link {
+    animation-name: show;
+    animation-duration: .2s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: both;
+    display: none;
+    border: none;
+}
+
+#add span {
+    font-family: 'Roboto', sans-serif;
+}
+
+#add:hover {
+    margin-top: 0;
+    cursor: pointer;
+}
+
+#profilepic,
+#certificado {
+    animation-name: show;
+    animation-duration: .2s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: both;
+    border: none;
+}
+
+#certificado1_link {
+    border: none;
+}
+
+textarea {
+    width: 230px;
+    height: 100px;
+    margin: 10px 0;
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.07);
+    border-color: -moz-use-text-color #FFFFFF #FFFFFF -moz-use-text-color;
+    border-image: none;
+    border-radius: 6px 6px 6px 6px;
+    border-style: none solid solid none;
+    border-width: medium 1px 1px medium;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12) inset;
+    color: #555555;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    line-height: 1.4em;
+    padding: 5px 8px;
+    resize: none;
+    transition: background-color 0.2s ease 0s;
+}
+
+textarea:focus {
+    background: none repeat scroll 0 0 #FFFFFF;
+    outline-width: 0;
+}
+
+.form-1{
+    animation-name: show;
+    animation-duration: .2s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: both;
+}
+
+.form-2{
+    animation-name: show;
+    animation-duration: .2s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: both;
+    display: none;
+}
+
+.form-3{
+    animation-name: show;
+    animation-duration: .2s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: both;
+    display: none;
+}
+
+#continuar,
+#continuar1,
+#registrarse,
+#regresar,
+#regresar1{
+    animation-name: slide;
+    animation-duration: .2s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: both;
+}
+
+@media only screen and (max-width:1000px) {
+
+    h2 {
+        margin-top: 0px;
+    }
+
+    .login {
+        width: 100%;
+        flex-direction: column;
+        margin: auto;
+        margin-top: 50px;
+        padding: auto;
+    }
+
+    .signup-form {
+        width: 80%;
+        margin: auto;
+    }
+
+    .login-form {
+        width: 80%;
+        margin: auto;
+    }
+
+    .login-form .user-fieldset {
+        width: 200px;
+        padding: 10%;
+        margin: auto;
+    }
+
+    .signup-form .user-fieldset {
+        width: 200px;
+        padding: 10%;
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width:400px) {
+    .login {
+        overflow: hidden;
+    }
+
+    .login-form {
+        margin-left: 10px;
+    }
+
+    .signup-form {
+        margin-left: 10px;
+    }
+}

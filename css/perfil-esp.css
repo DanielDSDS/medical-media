@@ -1,0 +1,192 @@
+
+.hide {
+    display: none;
+}
+
+.fa-angle-up {
+    display: none;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.aviso {
+    height: 14%;
+    margin: 100px 0 -40px 0;
+    color: #ffff;
+    font-family: 'Raleway', serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    background: #dd3a3a;
+}
+
+.topdiv {
+    display: flex;
+    flex-direction: row;
+    margin: 120px 30px 15px 50px;
+    padding: 10px 0;
+    border: 5px solid #10b592;
+    border-radius: 4px;
+}
+
+/* div de pfp */
+.basic-profiledata {
+    width: 25%;
+    margin: auto;    
+    margin-right: 5px;
+}
+
+/*foto de perfil*/
+.pfp {
+    margin-top: 50px;
+    height: 180px;
+    width: 180px;
+    border-radius: 4px;
+}
+
+/* letra de nombre */
+.topdiv h3 {
+    margin-bottom: 50px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+}
+
+/* div de datos */
+.personal-profiledata {
+    margin-top: 65px;
+    margin-left: 5px;
+    margin-right: 20px;
+    font-family: 'Roboto', sans-serif;
+    text-align: justify;
+}
+
+#standardpfp,
+#mypfp {
+    display: none;
+}
+
+.descripcion-profiledata {
+    margin: auto;
+    margin-top: 80px;
+    margin-left: 5px;
+}
+
+.descripcion-profiledata h1{
+    margin: auto;
+}
+
+.descripcion-personal {
+    width: 550px;
+    max-width: 550px;
+    min-width: 550px;
+    margin-top: 30px;
+    margin-left: 10px;
+    text-align: left;
+    line-height: 20px;
+}
+
+/* contenedor del calendario */
+.calendar-container {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 50px;
+}
+
+/* calendario */
+#calendario {
+    width: 75%;
+    height: 430px;
+    margin: 30px 0 30px 28px;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 4px;
+}
+
+.subtitle {
+    color: #333;
+    font-size: 22px;
+    border: none;
+    display: none;
+}
+
+/*opciones de personalizacion*/
+.options {
+    width: 20%;
+    height: 430px;
+    margin: 0;
+    margin-top: 14px;
+    margin-left: 10px;
+    text-align: center;
+}
+
+.options li {
+    height: 104px;
+    width: 100%;
+    margin: 5px 0;
+    padding: 40px 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    color: #10b592;
+    background: #333;
+    border-radius: 4px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+.options li:hover {
+    transform: scale(1.048);
+    transition: all .3s ease;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+
+/* campos de citas */
+.appointment-fields {
+    display: none;
+    width: 30%;
+    margin: auto;
+    margin-left: 40px;
+    text-align: left;
+}
+
+.appointment-fields h1 {
+    font-size: 16px;
+    margin-top: 30px;
+    text-align: center;
+    color: #10b592;
+    border: 1px solid #10b592;
+    border-radius: 4px;
+}
+
+#horarios,
+#tipo-citas,
+#ubicacion {
+    padding: 1px;
+    margin-right: 10px;
+    margin-left: 0;
+    color:  #10b592;
+    text-decoration: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.horarios,
+.tipo-citas,
+.ubicacion {
+    display: none;
+}
+
+
+
+@media only screen and (max-width: 1000px) {
+    .basic-profiledata {
+        width: 25%;
+        margin: auto;
+        margin-right: 40px;
+    }
+
+    .options {
+        width: 25%;
+    }
+}

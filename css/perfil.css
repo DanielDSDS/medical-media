@@ -1,0 +1,341 @@
+/*CSS DE PERFIL.HTML*/
+.hide {
+    display: none;
+}
+
+h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 32px;
+    color: #ffffff;
+}
+/*contenedor superior*/
+.top-container {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 40px;
+}
+
+/*contenedor personal*/
+.personal-dashboard {
+    animation-name: show;
+    animation-duration: .2s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: both;
+    height: 350px;
+    margin-top: 38px;
+}
+
+
+.personal-dashboard nav {
+    width: 300px;
+    height: 455px;
+    display: flex;
+    flex-direction: column;
+    background: #333;
+    color: #ffffff;
+    align-content: center;
+    align-items: center;
+    padding: 30px 30px 25px 225px;
+    margin: 50px 0 0 120px;
+    border-radius: 4px;
+}
+
+/*foto de perfil*/
+.personal-dashboard img {
+    height: 150px;
+    width: 150px;
+    border-radius: 4px;
+    margin-right: 200px;
+}
+
+/*nombre y apellido*/
+.personal-dashboard h2 {
+    margin-top: 35px;
+    font-size: 18px;
+    text-shadow: 2px 2px 12px black;
+}
+
+/*descripcion*/
+.personal-dashboard p {
+    width: 400px;
+    font-size: 14px;
+    text-align: justify;
+    margin-left: -90px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*contenedor de medios*/
+.personal-dashboard section {
+    width: 200px;
+    margin-left: -200px;
+}
+
+/*medios*/
+.social-media {
+    margin: 20px 200px 0 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.social-media a {
+    height: 80px;
+    text-decoration: none;
+    color: inherit;
+    text-align: center;
+    font-size: 12px;
+    overflow: hidden;
+    width: 80px;
+}
+
+#email {
+    width: 150px;
+}
+
+.instagram,
+.google,
+.twitter,
+.mobile{
+    font-size: 30px;
+    text-align: center;
+}
+
+.mobile {
+    color: #4b8b3b;
+    font-size: 30px;
+    width: 100px;
+    margin-right: 5px;
+}
+
+.twitter {
+    color: #1DA1F2;
+    font-size: 30px;
+}
+
+.google {
+    color: #de1738;
+    font-size: 30px;   
+}
+
+.calendar {
+    display: flex;
+    flex-direction: row;
+}
+
+#calendario {
+    width: 520px;
+    height: 350px;
+    margin: 90px 0 0 60px;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 4px;
+}
+
+#calendario select {
+    padding: 10px;
+    margin: 7px;
+    width: 200px;
+}
+
+#errorCalendario {
+    display: none;
+    font-size: 20px;
+}
+
+#options {
+    animation-name: show;
+    animation-duration: .2s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: both;
+}
+
+#options span {
+    margin-right: 32px;
+}
+
+
+#confirm {
+    height: 509.5px;
+    width: 528px;
+    position: absolute;
+    left: 54%;
+    top: 13%;
+    display: none;
+    background: #333;
+    border-radius: 4px;
+
+}
+
+#confirm h1{
+    font-family: 'Raleway',serif;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+.confirmar-cita {
+    margin-top: 0;
+    padding-top: 30px;
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+    text-indent: inherit;
+    text-align: center;
+}
+
+.campo {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 50px;
+    font-family: 'Bree Serif', serif;
+    background: #ffffff;
+    color: #333;
+    border-radius: 4px;
+}
+
+.campo span {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+}
+
+#paymentButton {
+    position: relative;
+    top: -40px;
+    color: #ffffff;
+    background: #333;
+    border: 1px solid #ffffff;
+}
+
+#paymentButton:hover {
+    color: #333;
+    background: #ffffff;
+}
+
+
+/*Bloque de informacion personal*/
+
+/*contenedor izquiero para los datos personales*/
+.curriculum {
+    float: left;
+    margin-top: 160px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.data-list {
+    width: 515px;
+    margin: 0 0 0 120px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: left;
+    background: #f4eee1;
+    border-radius: 4px;
+    margin-bottom: 50px;
+    width: 555px;
+}
+
+.data-list-item {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    text-align: justify;
+    font-size: 12px;
+}
+
+.data-list-item ul {
+    width: 230px;
+} 
+
+.response {
+    background: #e4dac2;
+    border-radius: 4px;
+} 
+
+.data-list-item li {
+    margin: 5px 10px;
+}
+
+/* Mapa de Leaflet.js */
+#map {
+    float: left;
+    margin: 160px 0 0 60px;
+    width: 520px;
+    height: 300px;
+}
+
+@media only screen and (max-width:1000px) {
+    
+    .top-container {
+        flex-direction: column;
+    }
+
+    .social-media a {
+        font-size: 10px;
+        padding: 0 1px;
+        margin: 0;
+        width: 60px;
+    }
+    
+    #email {
+        width: 120px;
+    }
+    
+    .twitter,
+    .instagram,
+    .google,
+    .mobile {
+        font-size: 25px;
+    }
+    
+    
+    .personal-dashboard nav {
+        width: 20%;
+        height: 420px;
+        margin: auto;
+        margin-top: 100px;
+        margin-bottom: 50px;
+    }
+
+
+    .personal-dashboard h2 {
+        font-size: 20px;
+        text-shadow: 2px 2px 12px black;
+    }
+
+    .personal-dashboard p {
+        width: 250px;
+        text-align: center;
+        margin-left: -30px;
+    }
+
+    #calendario {
+        margin: auto;
+        margin-top: 240px;
+        width: 85%;
+    }
+
+    .data-list { 
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        margin: auto;
+        margin-top: 0;
+        padding: inherit;
+    }
+    
+    .data-list-item{
+        width: 80%;
+        overflow: hidden;
+    }
+    
+    .data-list-item ul {
+        text-align: center;
+    }
+
+    #map {
+        width: 100%;
+        margin: auto;
+        margin-top: 650px;
+    }
+
+}
+
+/*FIN DE CSS DE PERFIL.HTML*/

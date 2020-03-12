@@ -1,0 +1,295 @@
+
+/*CSS GENERICOS*/
+/* animaciones */
+
+.fadein {
+    -webkit-animation: fadein .4s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein .4s; /* Firefox < 16 */
+    -ms-animation: fadein .4s; /* Internet Explorer */
+    -o-animation: fadein .4s; /* Opera < 12.1 */
+    animation: fadein .4s;
+}
+
+.fadeout {
+    -webkit-animation: fadeout .4s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadeout .4s; /* Firefox < 16 */
+    -ms-animation: fadeout .4s; /* Internet Explorer */
+    -o-animation: fadeout .4s; /* Opera < 12.1 */
+    animation: fadeout .4s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@keyframes fadeout {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadeout {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadeout {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadeout {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadeout {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+}
+
+@keyframes show {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+}
+
+@keyframes hide {
+    to {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+}
+
+@keyframes slide {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+}
+
+@keyframes slided {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+}
+
+@keyframes slideY {
+    from {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+}
+
+/*Selectores de elementos html*/
+body {
+    padding-top: 1.6em;
+    background-color: white;
+    margin: 0px;
+    text-align: center;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    background: none;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+main {
+    margin: 0px;
+    margin-top: -30px;
+    text-align: center;
+    border-style: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/*Selectores de clases comunes*/
+
+.logo {
+    margin-right: 48vw;
+    width: 80px;
+}
+
+.logo,
+.busqueda,
+.faqs,
+.sign-up,
+.logoff,
+.perfil{
+    display: block;
+}
+
+.plain-text {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: 'Roboto', serif;
+    font-size: 12px;
+}
+
+.contenedor {
+    text-align: center;
+    height:75px;
+}
+
+.section-title {
+    color: #333;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 60px;
+}
+
+.section-subtitle {
+    text-align: center;
+    font-family: 'Aleo', sans-serif;
+    font-size: 22px;
+    font-weight: 100;
+}
+
+.boton-submit {
+    height: 42px;
+    width: 245px;
+    margin: 20px 0;
+    font-family: 'Raleway', sans-serif;
+    background: #333;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    letter-spacing: 1px;
+  /*  text-transform: uppercase; */
+
+}
+
+.boton-submit:hover {
+    transform: scale(1.048);
+    transition: all .3s ease;
+    cursor: pointer;
+    color: #10b592;
+}
+
+.topnav {
+    display: inline-block;
+    position: relative;
+    left: auto;
+    width: 100%;
+    overflow: hidden;
+}
+
+.topnav a {
+    position: relative;
+    height: 10px;
+    padding: 30px 42.15px;
+    padding-bottom: 35px;
+    letter-spacing: 0.5px;
+    float: left;
+    color: black;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    /* text-transform: uppercase;*/
+    font-size: 1vw;
+}
+
+
+.topnav a:hover {
+    color: #10b592!important;
+}
+
+.active {
+    color: #10b592!important;
+}
+
+#dropdown{
+    display: none;
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 1100px) and (min-width: 900px){
+    .logo {
+        margin-right: 35vw;
+    }
+    
+}
+
+@media only screen and (max-width: 900px) {
+    
+    .busqueda,
+    .faqs,
+    .sign-up,
+    .logoff,
+    .perfil{
+        display: none;
+    }    
+    
+    header{
+        background: #333;
+    }
+    
+    .topnav {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .topnav a {
+        height: 9px;
+        float: left;
+        color: #ffffff;
+        background: #333;
+        font-size: 12px;
+    }
+    
+    /* esconder los links del topnav excepto el de home */
+    .topnav > a + a{
+        display: none;
+    }
+    
+    /* mostrar icono de dropdown cuando se achique la pantalla */
+    #dropdown {
+        display: block;
+        position: fixed;
+        top: 26px;
+        right: 30px;
+        color: #ffffff;
+    }
+    
+    .topnav a:hover {
+        color: #10b592!important;
+    }
+    
+}
+/*FIN DE CSS GENERICO*/

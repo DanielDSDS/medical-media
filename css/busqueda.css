@@ -1,0 +1,270 @@
+@keyframes show {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.loader {
+    margin-top: -40px;
+    margin-left: 80px;
+    border: 6px solid #82ddab;
+    border-top: 6px solid #10b592; 
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    animation: spin 2s linear infinite;
+    display: none;
+}
+
+ul{
+    padding: 0;
+}
+
+/*Bloque de usuario completo*/
+#item {
+    width: 1000px;
+    height: 200px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    background: #f5f5f5;
+    color:black;
+    margin-bottom: 4px;
+    border-radius: 4px;
+    border: .5px solid lightgray;
+    animation-name: show;
+    animation-duration: .4s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: both;   
+}
+
+.empty {
+    display: none;
+    font-family: 'Roboto',serif;
+}
+
+.c1 {
+    margin:20px 0 5px 10px;
+    width: 20%;
+}
+
+.pfp{
+    height: 100px;
+    width: 100px;
+    border-radius: 4px;
+}
+
+.nombre{
+    font-family: 'Raleway',sans-serif;
+    font-weight: 400;
+}
+
+.c2 {
+    width: 55%; 
+}
+/*Bloque de datos especificos*/
+.data {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: auto;
+    padding: 10px 0 10px 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background: #333;
+    color: #f5f5f5;
+    border-radius: 4px;
+}
+
+.icon {
+    font-size: 16px;
+    margin: 0 4px;
+    color: #10b592;
+}
+
+.descripcion {
+    font-family: 'Roboto',sans-serif;
+    text-align: left;
+    margin-top: 5px;
+    font-size: 14px;
+    height: 40px;
+    width: 400;
+}
+
+.c3 {
+    width: 25%;
+}
+
+.c3-data {
+    width: 200px;
+    padding: 5px 0 15px 0;
+    margin:auto;
+    margin-top: 20px;
+    background: #333;
+    color: #f5f5f5;
+    border-radius: 4px;
+    text-align: left;
+}
+
+.data h4,
+.c3-data h4{
+    margin: auto;
+    font-size: 14px;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 100;
+}
+
+.c3-data h4{
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+.c4 button {
+    margin-left: 2.5px;
+    margin-right: 2.5px;
+}
+
+@media only screen and (max-width: 950px) {
+    
+    .loader {
+        margin-top: -35px;
+        margin-left: 2%;
+        width: 12px;
+        height: 12px;
+    }  
+    
+    #item {
+        width: 96%;
+        height: 220px;
+    }
+
+    .c1 {
+        margin:16px 8px 5px 8px;
+        width: 17%;
+    }
+
+    .pfp{
+        height: 45%;
+        width: 80%;
+        border-radius: 4px;
+        margin-top: 33%;
+    }
+
+    .nombre{
+        font-family: 'Raleway',sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+    }
+
+    .c2 {
+        width: 50%; 
+    }
+    
+    .data {
+        width: 100%;
+        padding: 8px 0 8px 0;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    
+    .icon {
+        font-size: 12px;
+        margin: 0 4px;
+    }
+
+    .descripcion {
+        margin-bottom: 30px;
+        font-size: 12px;
+        height: 20%;
+    }
+
+    .c3 {
+        width: 30%;
+    }
+
+    .c3-data {
+        margin-top: 15px;
+        width: 95%;
+        padding: 10px 0 10px 0;
+    }
+
+    .data h4,
+    .c3-data h4{
+        font-size: 12px;
+    }
+
+    .c3-data h4{
+        margin-top: 8px;
+        margin-left: 5px;
+    }
+
+    .c4 button {
+        width: 45%;
+    }
+    
+    button {
+        font-size: 7px;
+    }
+    
+    .c4-data {
+        height: 50px;
+    }
+}
+
+@media only screen and (max-width: 560px) {
+    #item{
+        flex-direction: column;
+        height: 400px;
+    }
+    
+    .c1 {
+        display: flex;
+        flex-direction: row;
+        margin: auto;   
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    .pfp{
+        margin: auto; 
+        height: 60px;
+        width: 60px;
+        border-radius: 4px;
+        margin-top: 5px;
+        margin-right: 5px;
+    }
+    
+    .nombre{
+        margin: auto;
+        font-family: 'Raleway',sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+    }
+    
+    .c2 {
+        width: 100%;
+    }
+    
+    .descripcion {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    
+    .c3 {
+        width: 100%;
+    }
+    
+    .c3-data {
+        width: 100%;
+        margin-top: 5px;
+        display: flex;
+        flex-direction: row;
+    }
+}
